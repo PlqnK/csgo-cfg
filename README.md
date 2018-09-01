@@ -1,5 +1,7 @@
 # My Counter Strike: Global Offensive config
 
+List of all the available CS:GO Cvars: <https://developer.valvesoftware.com/wiki/List_of_CS:GO_Cvars>
+
 ## Installation on Linux
 
 Navigate to where you want to store the config files, for example `$HOME/Documents`, then:
