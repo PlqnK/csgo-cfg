@@ -1,6 +1,7 @@
 # My Counter Strike: Global Offensive config
 
 List of all the available CS:GO Cvars: <https://developer.valvesoftware.com/wiki/List_of_CS:GO_Cvars>
+Orel Text Mod: <https://gamebanana.com/gamefiles/3711>
 
 ## Installation on Linux
 
