@@ -71,9 +71,7 @@ If you want to enable "Practice mode" you just need the execute the `practice.cf
 
 ### Launch Options
 
-```
--novid -nojoy -language textmodorel
-```
+`-novid -nojoy -language textmodorel`
 
 - `novid` to skip the video intro
 - `nojoy` is required for me since the Panorama update on Linux
