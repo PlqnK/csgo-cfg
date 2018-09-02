@@ -1,7 +1,6 @@
 # My Counter Strike: Global Offensive config
 
-List of all the available CS:GO Cvars: <https://developer.valvesoftware.com/wiki/List_of_CS:GO_Cvars>
-Orel Text Mod: <https://gamebanana.com/gamefiles/3711>
+List of all the available CS:GO Cvars: <https://developer.valvesoftware.com/wiki/List_of_CS:GO_Cvars>  
 
 ## Installation on Linux
 
@@ -39,9 +38,30 @@ Verify that the files were correctly copied by navigating to your csgo `cfg` fol
 
 ## Usage
 
+### General
+
 You don't need to add `+exec autoexec.cfg` to your CS:GO launch options but you need to add `-language textmodorel` to enable the Orel Text Mod.
 
-For optimal use, you shouldn't delete the folder that contains the git repository that's in your `Documents` folder so that you can later edit the files it contains and just re-execute the `copy-cfg-files` script again.
+For optimal use, you shouldn't delete the folder that contains the git repository that's in your `Documents` folder in order to edit the files it contains later and just re-execute the `copy-cfg-files` script again.
+
+### In-game
+
+The `autoexec.cfg` file is automatically executed at launch and write every values it contains inside the `config.cfg` file.
+
+If you want to enable "Practice mode" you just need the execute the `practice.cfg` file by opening the console (by pressing "-" or whatever you have set "toggleconsole" to in `binds.cfg`), typing `exec practice` and pressing `ENTER`. Same thing if you want to enable "Overwatch mode" or "Screenshot mode", use `exec overwatch` and `exec screenshot` respectively.
+
+"Practice mode" enable multiple useful options if you want to practice your spray control or grenade throws in an offline server.
+
+"Overwatch mode" create multiple useful keybinds for reviewing Overwatch cases.
+
+"Screenshot mode" is a config made to take great screenshots of your skins with a blurred background. In order to use it you need to:
+
+- Execute it.
+- As the message says in the console, enable motion blur in the video settings.
+- In-game, wiggle your mouse as much as possible making your screen as blurry as possible
+- Press "K", it will freeze all post-processing effect (like motion blur) in their current state so you will have a permanent blurred background.
+- Press "M" to slow the in-game speed.
+- Press your weapon inspect key and you will be able to take screenshots of it under every angle.
 
 ## Personal config
 
@@ -53,7 +73,7 @@ For optimal use, you shouldn't delete the folder that contains the git repositor
 
 - `novid` to skip the video intro
 - `nojoy` is required for me since the Panorama update on Linux
-- `language textmodorel` to enable the Orel Text Mod
+- `language textmodorel` to enable the [Orel's Text Mod](https://gamebanana.com/gamefiles/3711)
 
 ### Mouse settings
 
