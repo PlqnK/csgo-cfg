@@ -32,7 +32,7 @@ ls -l /path/to/your/csgo/cfg
 
 ## Installation on Windows
 
-Download an archive of this repository by clicking the "Clone or download" green button on the top*ish* right of this page and then clicking "Download ZIP".
+Download an archive of this repository by clicking the "Clone or download" green button on the top*ish* right of this page and then clicking on "Download ZIP".
 
 Copy the downloaded `csgo-cfg-master.zip` file to the folder where you want to store the config files, for example `%USERPROFILE%\Documents` and unzip it.
 
@@ -46,9 +46,9 @@ Verify that the files were correctly copied by navigating to your csgo `cfg` fol
 
 ### General
 
-You don't need to add `+exec autoexec.cfg` to your CS:GO launch options but you need to add `-language textmodorel` to enable the Orel Text Mod.
+You don't need to add `+exec autoexec.cfg` to your CS:GO launch options but you need to add `-language textmodorel` to enable the Orel's Text Mod.
 
-From now on you shouldn't modify CS:GO settings[1] by using the in-game menu. If you do so your modifications will be overwritten the next time you open CS:GO. If you want to modify a particular setting you will need to directly edit the corresponding `.cfg` file.
+From now on you shouldn't modify CS:GO settings[1] by using the in-game menu. If you do so your modifications will be overwritten by the settings stored in the `.cfg` files the next time you open CS:GO. If you want to modify a particular setting you will need to directly edit the corresponding `.cfg` file.
 
 [1] The only exception is video settings that are not modified by the `autoexec.cfg` file.
 
@@ -94,51 +94,56 @@ If you want to enable "Practice mode" you just need the execute the `practice.cf
 
 `-novid -nojoy -language textmodorel`
 
-- `novid` to skip the video intro
-- `nojoy` is required for me since the Panorama update on Linux, because I have an Xbox One controller plugged-in at all time, see this [github issue](https://github.com/ValveSoftware/csgo-osx-linux/issues/1801) to learn more.
-- `language textmodorel` to enable the Orel's Text Mod
+- `novid` to skip the video intro.
+- `nojoy` is required for me since the Panorama update on Linux because I have an Xbox One controller plugged-in at all time and CS:GO crash at launch in this situation. See this [github issue](https://github.com/ValveSoftware/csgo-osx-linux/issues/1801) to learn more.
+- `language textmodorel` to enable the Orel's Text Mod.
 
-You shouldn't use any other options like `threads` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5y8r7v/in_depth_discussion_of_the_threads_launch_option/)), `nod3d9ex` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/6ndpi4/are_nod3d9ex_mat_queue_mode_2_still_good_launch/)), `high` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5pxtqi/is_it_worth_using_threads_4_and_high_in_launch/dcuzf2d/)), `mat_queue_mode` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5zkpwn/in_depth_discussion_of_mat_queue_mode_and_mat/)), `refresh` and/or `hz` (CS:GO will run at your default refresh rate regardless).
+You shouldn't use any other options like `threads` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5y8r7v/in_depth_discussion_of_the_threads_launch_option/)), `nod3d9ex` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/6ndpi4/are_nod3d9ex_mat_queue_mode_2_still_good_launch/)), `high` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5pxtqi/is_it_worth_using_threads_4_and_high_in_launch/dcuzf2d/)), `mat_queue_mode` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5zkpwn/in_depth_discussion_of_mat_queue_mode_and_mat/)) as well as `refresh` and/or `hz` because CS:GO will run at your default refresh rate regardless.
 
-You can use `tickrate 128` for your offline matches to be 128 ticks in order to be able to practice nades specific to that tickrate.
+`tickrate 128` will make your offline matches run at 128 ticks which can be useful if you need to practice nades throw that are specific to that tickrate.
 
 ### Mouse settings
 
 - `DPI`: 1600
   - I have a rather high DPI to avoid pixel skipping, see [3kliksphilip video about it](https://www.youtube.com/watch?v=8XNUp70mDlQ).
 - `Polling Rate`: 1000Hz
-  - The amount of time per second that your OS will poll your mouse, if you have a wired mouse you want to set this to it's highest value possible. If you have a wireless mouse you also need to think about battery life and maybe set it to 500Hz or 250Hz if you don't feel any difference.
+  - The amount of time per second that your OS will poll your mouse. If you have a wired mouse you want to set this to it's highest value possible. If you have a wireless mouse you also need to think about battery life and maybe set it to 500Hz or 250Hz if you don't feel any difference.
 
 ### Video settings
 
-- [VibranceGUI](https://vibrancegui.com/), vibrance level: 75
-  - Good compromise between the dull default and the over the top max vibrance.
+- [VibranceGUI](https://vibrancegui.com/), in-game vibrance level: 75
+  - VibranceGUI will automatically enable AMD Saturation or Nvidia Digital Vibrance when a specific configured game is full-screened. It makes the in-game colors "pop" more while the desktop can stay at it's standard value. I chose 75 because it's a good compromise between the dull CS:GO default and the over the top maximal saturation.
 - `Definition`: 1920x1080
-  - The native definition of my monitor.
+  - It's down to personal preference and computer specs. If you have a low spec computer you will need to lower it. Some people prefer 4:3 or 5:4 with black bars, others 4:3 or 5:4 stretched but there's no factual advantages, in fact there's disadvantages (lower FOV for example) to using this definitions. See [3kliksphilip video](https://youtu.be/Qs6xbnKBnbY?t=1m54s) on the matter to learn more. I personaly prefer to use my monitor native definition which is 1080p.
 - `Display Mode`: Fullscreen
-  - For the lowest input lag, chose "Fullscreen".
+  - For the lowest input lag, chose `Fullscreen` because it give the game direct access to the graphics output without the OS interfering and adding display lag. `Windowed` and `Fullscreen windowed` will make alt-tabbing faster but because the video frames has to pass through the OS before being displayed it will add some display lag.
+
+Here's a great (pretty old but still relevant) 3kliksphilip video on all the graphics options below if you want to learn more: <https://www.youtube.com/watch?v=ns9srRoDop8>.
+
+Here's another (more recent and also relevant) 3kliksphilip video on `Effect Detail` and `Shader Detail` effect on molotov's smoke particles: <https://www.youtube.com/watch?v=s5-aqgwBhM4>.
+
 - `Global Shadow Quality`: High
-  - Shadow quality affects their render distance so you need the highest one to be able to see them in certain situations and because shadows can giveaway players position you really want to be able to see them in all circumstances.
+  - Shadow quality affects the render distance of players shadows so you need the highest one to be able to see them in all situations. Because shadows can giveaway players position you want to be able to see them in all circumstances. On the other hand `Very low` disable a lot of the pre-baked models shadows which helps with visibility and players shadow can still be visible from really close but that's not enough for me.
 - `Model/Texture Detail`: High
-  - The resolution of the textures, lower the value if you don't care about it or have little amount of VRAM (less than 1GB)
+  - The resolution of the textures, lower the value if you don't care about it or have little amount of VRAM. There's pretty much no downside to using higher detailed textures in this game so go for it if you can.
 - `Effect Detail`: High
-  - See [3kliksphilip video on molotov visibility](https://www.youtube.com/watch?v=s5-aqgwBhM4), if you want less fire smoke at a distance, set `Effect Detail` to `High` and `Shader Detail` to at least `High`. On the other hand if you want less fire smoke close-up , set one of the two to something other than it's highest value.
+  - As explained in 3kliksphilip's video on molotov visibility, if you want less fire smoke at a distance, set `Effect Detail` to `High` and `Shader Detail` to at least `High`. On the other hand if you want less fire smoke close-up, set one of the two to something other than the `High` or `Very High` value.
 - `Shader Detail`: Very High
-  - Affect reflection on surfaces, like your gun skin, and other parameters.
+  - Affect reflection on surfaces, like your gun skin or water, rain and other parameters. If you want your gun skins to look good you need to set it to at least `High` but if you care more about gameplay you should set it to `Low` as explained in the first 3kliksphilip video.
 - `Multicore Rendering`: Enabled
   - Allow CS:GO to use multiple CPU cores.
 - `Multisampling Anti-Aliasing Mode`: 4x MSAA
-  - Which version of MSAA to use, higher value will look better but have a higher impact on performance. Don't use in conjunction of FXAA.
+  - Which version of MSAA or CSAA to use, higher value will look better but have a higher impact on performance. Don't use in conjunction of FXAA.
 - `FXAA Anti-Aliasing`: Disabled
-  - An other type of AA, less taxing in terms of performance. Don't use in conjunction of MSAA.
-- `Texture Filtering Mode`: Anisotropic 8x
-  - Enhance the image quality of textures when viewed at an angle. Performance impact really minimal.
+  - An other type of AA, a lot less taxing in terms of performance but very bad in term of quality because it's just a post-processing effect. Don't use in conjunction of MSAA or CSAA.
+- `Texture Filtering Mode`: Bilinear
+  - Enhance the image quality of textures when viewed at an angle. Performance impact really minimal. As said in the 3kliksphilip video you will want to set it to `Bilinear` if you care more about visibility than prettyness.
 - `Wait for Vertical Sync`: Disabled
   - VSync, you absolutely don't want that in CS:GO.
 - `Motion Blur`: Disabled
   - Same as VSync, you absolutely don't want that in CS:GO.
 - `HUD Edge Positions`: All the way up to the edge of the screen
-  - Down to personal preference but the smart choice would be to bring the edge of the HUD closer to the center of the screen in order for your eyes to do less travel when looking at it.
+  - Down to personal preference but the smart choice would be to bring the edge of the HUD closer to the center of the screen so that your eyes will have less travel to do in order to look at it.
 
 ## Contributing
 
