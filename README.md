@@ -11,7 +11,7 @@ git clone https://github.com/PlqnK/csgo-cfg.git
 cd csgo-cfg
 ```
 
-Edit the `copy-cfg-files-linux.sh` script to verify that the CS:GO install path is identical to yours and correct it if that's not the case, then:
+Edit the `copy-cfg-files-linux.sh` script to verify that the `CSGO_INSTALL_PATH` variable is identical to your CS:GO install path and change it if that's not the case, then:
 
 ```bash
 chmod u+x copy-cfg-files-linux.sh
@@ -30,7 +30,7 @@ Download an archive of this repository by clicking the "Clone or download" green
 
 Copy the downloaded `csgo-cfg-master.zip` file to the folder where you want to store the config files, for example `%USERPROFILE%\Documents` and unzip it.
 
-Edit the `copy-cfg-files-windows.cmd` script to verify that the CS:GO install path is identical to yours and correct it if that's not the case.
+Edit the `copy-cfg-files-windows.cmd` script to verify that the `csgo_install_path` variable is identical to your CS:GO install path and change it if that's not the case.
 
 Right click on the `copy-cfg-files-windows.cmd` file and click on "Execute as Administrator".
 
