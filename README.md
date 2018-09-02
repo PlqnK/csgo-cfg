@@ -26,9 +26,9 @@ ls -l /path/to/your/csgo/cfg
 
 ## Installation on Windows
 
-Download an archive of this repository by clicking the "Clone or download" green button on the right and then clicking "Download ZIP".
+Download an archive of this repository by clicking the "Clone or download" green button on the top*ish* right of this page and then clicking "Download ZIP".
 
-Copy the downloaded `csgo-cfg-master.zip` file to somewhere where you want to store the config files, for example `%USERPROFILE%\Documents` and unzip it.
+Copy the downloaded `csgo-cfg-master.zip` file to the folder where you want to store the config files, for example `%USERPROFILE%\Documents` and unzip it.
 
 Edit the `copy-cfg-files-windows.cmd` script to verify that the CS:GO install path is identical to yours and correct it if that's not the case.
 
@@ -41,6 +41,10 @@ Verify that the files were correctly copied by navigating to your csgo `cfg` fol
 ### General
 
 You don't need to add `+exec autoexec.cfg` to your CS:GO launch options but you need to add `-language textmodorel` to enable the Orel Text Mod.
+
+From now on you shouldn't modify CS:GO settings[1] by using the in-game menu. If you do so your modifications will be overwritten the next time you open CS:GO. If you want to modify a particular setting you will need to directly edit the corresponding `.cfg` file.
+
+[1] The only exception is video settings that are not modified by the `autoexec.cfg` file.
 
 For optimal use, you shouldn't delete the folder that contains the git repository that's in your `Documents` folder in order to edit the files it contains later and just re-execute the `copy-cfg-files` script again.
 
@@ -59,8 +63,8 @@ If you want to enable "Practice mode" you just need the execute the `practice.cf
 - Execute it.
 - As the message says in the console, enable motion blur in the video settings.
 - In-game, wiggle your mouse as much as possible making your screen as blurry as possible
-- Press "K", it will freeze all post-processing effect (like motion blur) in their current state so you will have a permanent blurred background.
-- Press "M" to slow the in-game speed.
+- Press `K`, it will freeze all post-processing effect (like motion blur) in their current state so you will have a permanent blurred background.
+- Press `M` to slow the in-game speed.
 - Press your weapon inspect key and you will be able to take screenshots of it under every angle.
 
 ## Personal config
