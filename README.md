@@ -58,16 +58,16 @@ For optimal use, you shouldn't delete the folder that contains the git repositor
 
 The config itself is pretty personal so you will have to edit the files in order to tailor it to your preferences.
 
-If your internet bandwidth is less than 6Mb/s (megabits per second) you should change the rate in the `autoexec.cfg` file to the appropriate value:
+If your internet bandwidth is less than 6 Mbps (megabits per second) you should change the rate in the `autoexec.cfg` file to the appropriate value:
 
-| Bandwith | rate             |
-|----------|------------------|
-| 0.5Mbps  | 65536            |
-| 1Mbps    | 131072           |
-| 1.5Mbps  | 196608 (default) |
-| 2Mbps    | 262144           |
-| 4Mbps    | 524288           |
-| 6Mbps    | 786432 (max)     |
+| Bandwith  | rate             |
+|-----------|------------------|
+| 0.5 Mbps  | 65536            |
+| 1 Mbps    | 131072           |
+| 1.5 Mbps  | 196608 (default) |
+| 2 Mbps    | 262144           |
+| 4 Mbps    | 524288           |
+| 6 Mbps    | 786432 (max)     |
 
 ### In-game
 
