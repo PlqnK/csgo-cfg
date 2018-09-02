@@ -4,6 +4,8 @@ This CS:GO config comes from years of accumulating information from various sour
 
 Some part of the README are based on a great reddit post by /u/birkir <https://www.reddit.com/r/GlobalOffensive/comments/8ax858/updated_csgo_tips_configs_and_more/>.
 
+This project also includes the wonderful Orel's Text Mod available here <https://gamebanana.com/gamefiles/3711> that will greatly simplify radio messages displayed in the chat.
+
 You can find a list of all the available CS:GO Cvars here: <https://developer.valvesoftware.com/wiki/List_of_CS:GO_Cvars>, it contains a description and the possible value of every one of them.
 
 ## Installation on Linux
@@ -94,7 +96,7 @@ If you want to enable "Practice mode" you just need the execute the `practice.cf
 
 - `novid` to skip the video intro
 - `nojoy` is required for me since the Panorama update on Linux, because I have an Xbox One controller plugged-in at all time, see this [github issue](https://github.com/ValveSoftware/csgo-osx-linux/issues/1801) to learn more.
-- `language textmodorel` to enable the [Orel's Text Mod](https://gamebanana.com/gamefiles/3711)
+- `language textmodorel` to enable the Orel's Text Mod
 
 You shouldn't use any other options like `threads` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5y8r7v/in_depth_discussion_of_the_threads_launch_option/)), `nod3d9ex` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/6ndpi4/are_nod3d9ex_mat_queue_mode_2_still_good_launch/)), `high` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5pxtqi/is_it_worth_using_threads_4_and_high_in_launch/dcuzf2d/)), `mat_queue_mode` ([here's why](https://www.reddit.com/r/GlobalOffensive/comments/5zkpwn/in_depth_discussion_of_mat_queue_mode_and_mat/)), `refresh` and/or `hz` (CS:GO will run at your default refresh rate regardless).
 
@@ -144,4 +146,6 @@ Contributions are welcome if you see any area of improvement possible to the scr
 
 ## License
 
-This project is released under the [Unlicense](https://unlicense.org). A copy of the license is available in this project folder.
+The Orel's Text Mod is available under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+The rest of the project is released under the [Unlicense](https://unlicense.org). A copy of the license is available in this project folder.
