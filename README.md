@@ -108,7 +108,7 @@ If your internet bandwidth is less than 6 Mbps (megabits per second) you should 
 | 1.5 Mbps  | 196608 (default) |
 | 2 Mbps    | 262144           |
 | 4 Mbps    | 524288           |
-| 6 Mbps    | 786432 (max)     |
+| 6+ Mbps   | 786432           |
 
 ### Launch Options
 
