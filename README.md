@@ -2,13 +2,15 @@
 
 This CS:GO config comes from years of accumulating information from various sources and maintaining it up to date with every game update introducing new features and deprecating others.
 
-Some part of the README are based on a great reddit post by /u/birkir <https://www.reddit.com/r/GlobalOffensive/comments/8ax858/updated_csgo_tips_configs_and_more/>.
+## Attribution and useful resources
 
-This project also includes the wonderful Orel's Text Mod available here <https://gamebanana.com/gamefiles/3711> that will greatly simplify radio messages displayed in the chat.
+This project includes the wonderful Orel's Text Mod available here: <https://gamebanana.com/gamefiles/3711>, that will greatly simplify radio messages displayed in the chat.
+
+Some part of the README are based on a great reddit post by /u/birkir: <https://www.reddit.com/r/GlobalOffensive/comments/8ax858/updated_csgo_tips_configs_and_more/>.
 
 You can find a list of all the available CS:GO Cvars here: <https://developer.valvesoftware.com/wiki/List_of_CS:GO_Cvars>, it contains a description and the possible value of every one of them.
 
-And you can follow this awesome repository: <https://github.com/funeralchris/csgo-list-of-cvars> which keeps a changelog on CS:GO Cvars since september 2018. It's really useful to know which cvar was added/modified/removed with updates.
+And you can follow this awesome repository: <https://github.com/funeralchris/csgo-list-of-cvars>, which keeps a changelog on CS:GO Cvars since september 2018. It's really useful to know which cvar was added/modified/removed with updates.
 
 ## Table of content
 
@@ -153,7 +155,7 @@ Here's another (more recent and also relevant) 3kliksphilip video on `Effect Det
   - VSync, you absolutely don't want that in CS:GO.
 - `Motion Blur`: **Disabled**
   - Same as VSync, you absolutely don't want that in CS:GO.
-- `HUD Edge Positions`: **All the way up to the edge of the screen**
+- `HUD Edge Positions`: **All the way up to the edges of the screen**
   - Down to personal preference but the smart choice would be to bring the edge of the HUD closer to the center of the screen so that your eyes will have less travel to do in order to look at it.
 
 ### Mouse settings
