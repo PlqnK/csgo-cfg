@@ -10,6 +10,22 @@ You can find a list of all the available CS:GO Cvars here: <https://developer.va
 
 And you can follow this awesome repository: <https://github.com/funeralchris/csgo-list-of-cvars> which keeps a changelog on CS:GO Cvars since september 2018. It's really useful to know which cvar was added/modified/removed with updates.
 
+## Table of content
+
+- [Installation](#installation)
+  - [Linux](#linux)
+  - [Windows](#windows)
+- [Usage](#usage)
+  - [General](#general)
+  - [In-game](#in-game)
+- [Configuration](#configuration)
+  - [Config files](#config-files)
+  - [Launch Options](#launch-options)
+  - [Video settings](#video-settings)
+  - [Mouse settings](#mouse-settings)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Installation
 
 ### Linux
