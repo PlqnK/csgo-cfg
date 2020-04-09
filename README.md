@@ -78,7 +78,7 @@ For optimal use, you shouldn't delete the folder that contains the git repositor
 
 ### In-game
 
-If you want to enable *Practice mode* you just need the execute the `practice.cfg` file by opening the console (by pressing `-` or whatever you have set `toggleconsole` to in `binds.cfg`), typing `exec practice` and pressing `ENTER`. Same thing if you want to enable *Overwatch mode* or *Screenshot mode*, use `exec overwatch` and `exec screenshot` respectively.
+If you want to enable *Practice mode* you just need the execute the `practice.cfg` file by opening the console (by pressing `=` or whatever you have set `toggleconsole` to in your binds), typing `exec practice` and pressing `ENTER`. Same thing if you want to enable *Overwatch mode* or *Screenshot mode*, use `exec overwatch` and `exec screenshot` respectively.
 
 *Practice mode* enables multiple useful options if you want to practice your spray control or grenade throws in an offline server.
 
