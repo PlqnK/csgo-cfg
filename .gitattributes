@@ -1,0 +1,7 @@
+# Set default behaviour, force UNIX-style line endings.
+* text=auto
+
+# Declare files that needs specific encoding and line endings on checkout.
+*.cfg text eol=crlf
+*.cmd text working-tree-encoding=WINDOWS-1252 eol=crlf
+csgo_textmodorel.txt text working-tree-encoding=UTF-16LE-BOM eol=crlf
